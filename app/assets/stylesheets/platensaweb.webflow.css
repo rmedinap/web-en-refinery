@@ -646,6 +646,10 @@ p {
   clear: none;
   text-align: right;
 }
+.last {
+	display:none;
+}
+
 @media (max-width: 991px) {
   h1 {
     font-size: 80px;
