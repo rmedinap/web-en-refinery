@@ -26,23 +26,17 @@
       <div class="w-row">
         <div class="w-col w-col-4 tricol">
           <div class="w-clearfix triblock">
-            <h1>PRESENTACIÓN</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo
-              cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p><a class="button" href="#">MÁS INFORMACIÓN</a>
+            <%= raw @page.content_for(:columna1) %>
           </div>
         </div>
         <div class="w-col w-col-4 tricol">
           <div class="w-clearfix triblock">
-            <h1>PRODUCTOS</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo
-              cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p><a class="button" href="#">MÁS INFORMACIÓN</a>
+            <%= raw @page.content_for(:columna2) %>
           </div>
         </div>
         <div class="w-col w-col-4 tricol">
           <div class="w-clearfix triblock">
-            <h1>PRESENTACIÓN</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo
-              cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p><a class="button" href="#">MÁS INFORMACIÓN</a>
+            <%= raw @page.content_for(:columna3) %>
           </div>
         </div>
       </div>
@@ -54,15 +48,16 @@
     <div class="w-row">
       <div class="w-col w-col-3">
         <div class="destacar">
-          <div class="textoblanco"><strong>Paneltim</strong>
-            <br>cambia
-            <br>tu manera
-            <br>de trabajar</div>
+          <div class="textoblanco">
+          	<%= raw @page.content_for(:destacar) %>
+          </div>
         </div>
       </div>
-      <div class="w-col w-col-9 portfolio-text">
+      <div class="w-col w-col-9 portfolio-text" style="background-image: url(<% @page.images.each do |image| %>
+	        <%= image.url %>
+	   <% end %>)">
         <div class="w-clearfix botondestacado">
-          <%= render '/refinery/content_page' %>
+          <%= raw @page.content_for(:body) %>
         </div>
       </div>
     </div>
