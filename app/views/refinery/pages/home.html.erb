@@ -1,5 +1,25 @@
   <div class="header">
-    <div class="w-container hero-text"></div>
+    <div class="w-container hero-text">
+	    <% main_slideshow = Refinery::ImageSlideshows::ImageSlideshow.find_by_title('primer slide') %>
+	    <div id="wrapper">
+	      <div class="slider-wrapper theme-default">
+	        <div id="slider" class="nivoSlider">
+	          <% main_slideshow.image_slides.each do |image_slide| %>
+	            <%= link_to image_slide.link_url do %>
+	              <%= image_tag image_slide.image.url, :alt => image_slide.title, :title => image_slide.caption %>
+	            <% end %>
+	          <% end %>
+	        </div>
+	      </div>
+	    </div>
+	    <script type="text/javascript">
+	      $(document).ready(function() {
+	          $('#slider').nivoSlider({
+	            <%= raw main_slideshow.js_config %>
+	          });
+	      });
+	    </script>
+    </div>
   </div>
   <div class="trisection">
     <div class="w-container service-columns">
@@ -42,9 +62,7 @@
       </div>
       <div class="w-col w-col-9 portfolio-text">
         <div class="w-clearfix botondestacado">
-          <h4>Producto Destacado</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo
-            cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p><a class="button" href="#">MÁS INFORMACIÓN</a>
+          <%= render '/refinery/content_page' %>
         </div>
       </div>
     </div>
@@ -66,4 +84,3 @@
     </div>
   </div>
 </div>
-<%= render '/refinery/content_page' %>
