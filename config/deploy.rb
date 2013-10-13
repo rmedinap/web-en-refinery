@@ -4,7 +4,6 @@ set :repository,  "git@bitbucket.org:rmedinap/platensa-refinery.git"
 set :branch, "master"
 set :ssh_options, { :forward_agent => true }
 set :user, "refinery"
-set :normalize_asset_timestamps, false
 
 set :deploy_to, "/home/#{user}/apps/#{application}"
 set :use_sudo, false
@@ -26,7 +25,6 @@ after "deploy", "deploy:cleanup" # keep only the last 5 releases
 after "deploy:setup", "deploy:setup_config"
 after "deploy:finalize_update", "deploy:symlink_config"
 after "deploy", "unicorn:restart"
-after "deploy", "assets:precompile"
 before "deploy", "deploy:check_revision"
 
 namespace :deploy do
