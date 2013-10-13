@@ -4,6 +4,7 @@ set :repository,  "git@bitbucket.org:rmedinap/platensa-refinery.git"
 set :branch, "master"
 set :ssh_options, { :forward_agent => true }
 set :user, "refinery"
+set :normalize_asset_timestamps, false
 
 set :deploy_to, "/home/#{user}/apps/#{application}"
 set :use_sudo, false
