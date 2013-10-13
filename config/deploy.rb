@@ -1,5 +1,5 @@
 set :application, "platensa"
-set :repository,  "git@bitbucket.org:rmedinap/platensa.git"
+set :repository,  "git@bitbucket.org:rmedinap/platensa-refinery.git"
 #set :deploy_via, :remote_cache
 set :branch, "master"
 set :ssh_options, { :forward_agent => true }
