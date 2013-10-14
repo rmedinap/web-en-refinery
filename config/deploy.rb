@@ -32,6 +32,7 @@ namespace :deploy do
   task :setup_config, roles: :app do
     run "mkdir -p #{shared_path}/config"
     run "mkdir -p #{shared_path}/uploads"
+    run "mkdir -p #{shared_path}/refinery"
     put File.read("config/nginx.conf"), "#{shared_path}/config/nginx.conf"
     sudo "ln -nfs #{shared_path}/config/nginx.conf /etc/nginx/sites-enabled/#{application}"
     put File.read("config/database.example.yml"), "#{shared_path}/config/database.yml"
