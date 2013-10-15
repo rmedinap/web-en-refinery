@@ -1,7 +1,7 @@
 #http://niczsoft.com/2012/03/fast-deployment-using-capistrano-rvm-and-more/
 
 #APP_ROOT = File.expand_path(File.dirname(File.dirname(__FILE__)))
-APP_ROOT = "/home/refinery/apps/platensa/current"
+APP_ROOT = "/home/ccastillo/apps/platensa_nuevo/current"
 #ENV['BUNDLE_GEMFILE'] = File.expand_path('../Gemfile', File.dirname(__FILE__))
 #require 'bundler/setup'
 
@@ -12,7 +12,7 @@ timeout 60
 # listen "127.0.0.1:9000"
 listen APP_ROOT + "/tmp/pids/unicorn.sock", :backlog => 64
 # Spawn unicorn master worker for user apps (group: apps)
-user 'refinery' 
+user 'ccastillo' 
 
 # Should be 'production' by default, otherwise use other env 
 rails_env = ENV['RAILS_ENV'] || 'production'

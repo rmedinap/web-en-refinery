@@ -1,15 +1,16 @@
-set :application, "platensa"
+set :application, "platensa_nuevo"
 set :repository,  "git@bitbucket.org:rmedinap/platensa-refinery.git"
 #set :deploy_via, :remote_cache
 set :branch, "master"
 set :ssh_options, { :forward_agent => true }
-set :user, "refinery"
+set :user, "ccastillo"
 
 set :deploy_to, "/home/#{user}/apps/#{application}"
 set :use_sudo, false
 
 #server "w3casts.com", :web, :app, :db, primary: true
-server "192.241.218.19", :web, :app, :db, primary: true
+#server "192.241.218.19", :web, :app, :db, primary: true
+server "nuevo.platensa.com", :web, :app, :db, primary: true
 
 default_run_options[:pty] = true
 ssh_options[:forward_agent] = true
