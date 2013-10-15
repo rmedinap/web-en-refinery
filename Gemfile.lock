@@ -128,6 +128,7 @@ GEM
       thor (~> 0.14)
     json (1.8.0)
     kgio (2.8.1)
+    libv8 (3.16.14.3)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
@@ -174,6 +175,7 @@ GEM
     rake (10.1.0)
     rdoc (3.12.2)
       json (~> 1.4)
+    ref (1.0.5)
     refinerycms-blog (2.0.5)
       acts-as-taggable-on
       filters_spam (~> 0.2)
@@ -211,6 +213,9 @@ GEM
       multi_json (~> 1.0)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
+    therubyracer (0.12.0)
+      libv8 (~> 3.16.14.0)
+      ref
     thor (0.18.1)
     tilt (1.4.1)
     treetop (1.4.15)
@@ -248,5 +253,6 @@ DEPENDENCIES
   refinerycms-page-images (~> 2.0.0)
   refinerycms-search (~> 2.0.0)
   sass-rails (~> 3.2.3)
+  therubyracer
   uglifier (>= 1.0.3)
   unicorn
