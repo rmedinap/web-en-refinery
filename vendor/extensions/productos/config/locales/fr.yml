@@ -1,0 +1,31 @@
+fr:
+  refinery:
+    plugins:
+      productos:
+        title: Productos
+    productos:
+      admin:
+        productos:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Producto
+            reorder: Réordonner les Productos
+            reorder_done: Fin de réordonnancement des Productos
+          records:
+            title: Productos
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Producto. Cliquer sur "Créer un(e) nouve(au/l/lle) Producto" pour créer votre premi(er/ère) producto.'
+          producto:
+            view_live_html: Voir ce(t/tte) producto <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) producto
+            delete: Supprimer définitivement ce(t/tte) producto
+      productos:
+        show:
+          other: Autres Productos
+  activerecord:
+    attributes:
+      'refinery/productos/producto':
+        name: Name
+        fabricante: Fabricante
+        propiedades: Propiedades
+        aplicaciones: Aplicaciones
+        disponibilidad: Disponibilidad

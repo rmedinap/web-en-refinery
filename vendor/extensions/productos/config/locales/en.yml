@@ -1,0 +1,31 @@
+en:
+  refinery:
+    plugins:
+      productos:
+        title: Productos
+    productos:
+      admin:
+        productos:
+          actions:
+            create_new: Add New Producto
+            reorder: Reorder Productos
+            reorder_done: Done Reordering Productos
+          records:
+            title: Productos
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Productos yet. Click "Add New Producto" to add your first producto.
+          producto:
+            view_live_html: View this producto live <br/><em>(opens in a new window)</em>
+            edit: Edit this producto
+            delete: Remove this producto forever
+      productos:
+        show:
+          other: Other Productos
+  activerecord:
+    attributes:
+      'refinery/productos/producto':
+        name: Name
+        fabricante: Fabricante
+        propiedades: Propiedades
+        aplicaciones: Aplicaciones
+        disponibilidad: Disponibilidad

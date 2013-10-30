@@ -60,3 +60,5 @@ gem 'refinerycms-page-images', '~> 2.0.0'
 gem 'refinerycms-image_slideshows', '~> 2.0.1'
 
 # END USER DEFINED
+
+gem 'refinerycms-productos', :path => 'vendor/extensions'

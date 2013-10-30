@@ -1,0 +1,33 @@
+zh-CN:
+  refinery:
+    plugins:
+      productos:
+        title: Productos
+    productos:
+      admin:
+        productos:
+          actions:
+            create_new: 建立新的 Producto
+            reorder: 对 Productos 重新排序
+            reorder_done: 对 Productos 的重新排序结束
+          records:
+            title: Productos
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Productos yet. Click "Add New Producto" to add your first producto.
+            no_items_yet: 目前没有 Productos . 点击 "Add New Producto" 创建一个producto.
+          producto:
+            view_live_html: 查看 producto 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 producto
+            delete: 永久删除 producto
+      productos:
+        show:
+          other: 其他 Productos
+  activerecord:
+    attributes:
+      'refinery/productos/producto':
+        name: Name
+        fabricante: Fabricante
+        propiedades: Propiedades
+        aplicaciones: Aplicaciones
+        disponibilidad: Disponibilidad

@@ -1,0 +1,31 @@
+nl:
+  refinery:
+    plugins:
+      productos:
+        title: Productos
+    productos:
+      admin:
+        productos:
+          actions:
+            create_new: Maak een nieuwe Producto
+            reorder: Wijzig de volgorde van de Productos
+            reorder_done: Klaar met het wijzingen van de volgorde van de Productos
+          records:
+            title: Productos
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Productos. Druk op 'Maak een nieuwe Producto' om de eerste aan te maken.
+          producto:
+            view_live_html: Bekijk deze producto op de website <br/><em>(opent een nieuw venster)</em>
+            edit: Bewerk deze producto
+            delete: Verwijder deze producto voor eeuwig
+      productos:
+        show:
+          other: Andere Productos
+  activerecord:
+    attributes:
+      'refinery/productos/producto':
+        name: Name
+        fabricante: Fabricante
+        propiedades: Propiedades
+        aplicaciones: Aplicaciones
+        disponibilidad: Disponibilidad
