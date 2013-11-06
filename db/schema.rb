@@ -11,7 +11,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131029235317) do
+ActiveRecord::Schema.define(:version => 20131103153817) do
+
+  create_table "refinery_album_pages", :force => true do |t|
+    t.integer "album_id"
+    t.integer "page_id"
+    t.string  "page_type", :default => "Refinery::Page"
+  end
+
+  add_index "refinery_album_pages", ["album_id"], :name => "index_refinery_album_pages_on_album_id"
+  add_index "refinery_album_pages", ["page_id"], :name => "index_refinery_album_pages_on_page_id"
 
   create_table "refinery_blog_categories", :force => true do |t|
     t.string   "title"
@@ -193,6 +202,98 @@ ActiveRecord::Schema.define(:version => 20131029235317) do
   add_index "refinery_pages", ["lft"], :name => "index_refinery_pages_on_lft"
   add_index "refinery_pages", ["parent_id"], :name => "index_refinery_pages_on_parent_id"
   add_index "refinery_pages", ["rgt"], :name => "index_refinery_pages_on_rgt"
+
+  create_table "refinery_photo_gallery_albums", :force => true do |t|
+    t.string   "title",                                       :null => false
+    t.text     "description"
+    t.string   "path"
+    t.string   "address"
+    t.decimal  "longitude",   :precision => 15, :scale => 10
+    t.decimal  "latitude",    :precision => 15, :scale => 10
+    t.text     "note"
+    t.datetime "created_at",                                  :null => false
+    t.datetime "updated_at",                                  :null => false
+  end
+
+  add_index "refinery_photo_gallery_albums", ["id"], :name => "index_refinery_photo_gallery_albums_on_id", :unique => true
+
+  create_table "refinery_photo_gallery_collection_albums", :force => true do |t|
+    t.integer "collection_id"
+    t.integer "album_id"
+  end
+
+  add_index "refinery_photo_gallery_collection_albums", ["album_id"], :name => "index_refinery_photo_gallery_collection_albums_on_album_id"
+  add_index "refinery_photo_gallery_collection_albums", ["collection_id"], :name => "index_refinery_photo_gallery_collection_albums_on_collection_id"
+
+  create_table "refinery_photo_gallery_collections", :force => true do |t|
+    t.string   "title",       :null => false
+    t.text     "description"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  add_index "refinery_photo_gallery_collections", ["id"], :name => "index_refinery_photo_gallery_collections_on_id", :unique => true
+
+  create_table "refinery_photo_gallery_photos", :force => true do |t|
+    t.string   "title",                                       :null => false
+    t.text     "description"
+    t.string   "path"
+    t.decimal  "longitude",   :precision => 15, :scale => 10
+    t.decimal  "latitude",    :precision => 15, :scale => 10
+    t.string   "file"
+    t.integer  "album_id"
+    t.datetime "created_at",                                  :null => false
+    t.datetime "updated_at",                                  :null => false
+  end
+
+  add_index "refinery_photo_gallery_photos", ["album_id"], :name => "index_refinery_photo_gallery_photos_on_album_id"
+  add_index "refinery_photo_gallery_photos", ["id"], :name => "index_refinery_photo_gallery_photos_on_id", :unique => true
+
+  create_table "refinery_portfolio_galleries", :force => true do |t|
+    t.string   "title"
+    t.text     "body"
+    t.integer  "parent_id"
+    t.integer  "lft"
+    t.integer  "rgt"
+    t.integer  "depth"
+    t.string   "slug"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "refinery_portfolio_gallery_translations", :force => true do |t|
+    t.integer  "refinery_portfolio_gallery_id"
+    t.string   "locale"
+    t.string   "title"
+    t.text     "body"
+    t.datetime "created_at",                    :null => false
+    t.datetime "updated_at",                    :null => false
+  end
+
+  add_index "refinery_portfolio_gallery_translations", ["locale"], :name => "index_refinery_portfolio_gallery_translations_on_locale"
+  add_index "refinery_portfolio_gallery_translations", ["refinery_portfolio_gallery_id"], :name => "index_dacf6685c3221de568049c599f2a69d1c1f9dd25"
+
+  create_table "refinery_portfolio_item_translations", :force => true do |t|
+    t.integer  "refinery_portfolio_item_id"
+    t.string   "locale"
+    t.string   "title"
+    t.text     "caption"
+    t.datetime "created_at",                 :null => false
+    t.datetime "updated_at",                 :null => false
+  end
+
+  add_index "refinery_portfolio_item_translations", ["locale"], :name => "index_refinery_portfolio_item_translations_on_locale"
+  add_index "refinery_portfolio_item_translations", ["refinery_portfolio_item_id"], :name => "index_2f72df747b84672dbcc6cb153c8031486c5de521"
+
+  create_table "refinery_portfolio_items", :force => true do |t|
+    t.string   "title"
+    t.string   "caption"
+    t.integer  "image_id",   :null => false
+    t.integer  "gallery_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.integer  "position"
+  end
 
   create_table "refinery_productos", :force => true do |t|
     t.string   "name"

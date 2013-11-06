@@ -12,5 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.ui.all
 //= require jquery.nivo.slider
+//= require fancybox/jquery.fancybox.pack
+//= require fancybox/lib/jquery.mousewheel-3.0.6.pack
+//= require fancybox/helpers/jquery.fancybox-buttons
 //= require_tree .

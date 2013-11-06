@@ -27,6 +27,7 @@ end
 
 #gem 'jquery-rails'
 gem 'jquery-rails', '~> 2.0.0'
+gem "jquery-ui-rails"
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -47,7 +48,7 @@ end
 # To use debugger
 # gem 'debugger'
 
-gem 'refinerycms', '~> 2.0.0', :git => 'git://github.com/refinery/refinerycms.git', :branch => '2-0-stable'
+gem 'refinerycms', '~> 2.0.3', :git => 'git://github.com/refinery/refinerycms.git', :branch => '2-0-stable'
 
 # USER DEFINED
 
@@ -58,6 +59,7 @@ gem 'refinerycms-inquiries', '~> 2.0.0'
 gem 'refinerycms-search', '~> 2.0.0'
 gem 'refinerycms-page-images', '~> 2.0.0'
 gem 'refinerycms-image_slideshows', '~> 2.0.1'
+gem 'refinerycms-photo-gallery', '~> 0.1.0', :git => 'git://github.com/Matho/refinerycms-photo-gallery.git', :branch=>'0-1-stable'
 
 # END USER DEFINED
 

@@ -14,3 +14,9 @@ Refinery::ImageSlideshows::Engine.load_seed
 
 # Added by Refinery CMS Productos extension
 Refinery::Productos::Engine.load_seed
+
+# Added by Refinery CMS Portfolio Engine
+Refinery::Portfolio::Engine.load_seed
+
+# Added by Refinery CMS PhotoGallery engine
+Refinery::PhotoGallery::Engine.load_seed
