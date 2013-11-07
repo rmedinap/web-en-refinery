@@ -1,45 +1,19 @@
-<%= render "/refinery/photo_gallery/albums/show" %>
-
-
-  <div class="header">
-    <div class="w-container hero-text">
-	    <% main_slideshow = Refinery::ImageSlideshows::ImageSlideshow.find_by_title('primer slide') %>
-	    <div id="wrapper">
-	      <div class="slider-wrapper theme-default">
-	        <div id="slider" class="nivoSlider">
-	          <% main_slideshow.image_slides.each do |image_slide| %>
-	            <%= link_to image_slide.link_url do %>
-	              <%= image_tag image_slide.image.url, :alt => image_slide.title, :title => image_slide.caption %>
-	            <% end %>
-	          <% end %>
-	        </div>
-	      </div>
-	    </div>
-	    <script type="text/javascript">
-	      $(document).ready(function() {
-	          $('#slider').nivoSlider({
-	            <%= raw main_slideshow.js_config %>
-	          });
-	      });
-	    </script>
-    </div>
-  </div>
   <div class="trisection">
     <div class="w-container service-columns">
       <div class="w-row">
         <div class="w-col w-col-4 tricol">
           <div class="w-clearfix triblock">
-            <%= raw @page.content_for(:columna1) %>
+            <%= raw @page.content_for(:fabricante) %>
           </div>
         </div>
         <div class="w-col w-col-4 tricol">
           <div class="w-clearfix triblock">
-            <%= raw @page.content_for(:columna2) %>
+            <%= raw @page.content_for(:propiedades) %>
           </div>
         </div>
         <div class="w-col w-col-4 tricol">
           <div class="w-clearfix triblock">
-            <%= raw @page.content_for(:columna3) %>
+            <%= raw @page.content_for(:aplicaciones) %>
           </div>
         </div>
       </div>
