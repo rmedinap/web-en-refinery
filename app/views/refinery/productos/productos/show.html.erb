@@ -1,58 +1,30 @@
-  <div class="trisection">
+<div class="w-container">
+  <h2><%= raw @producto.name %></h2>
+</div>
+<div class="trisection">
     <div class="w-container service-columns">
       <div class="w-row">
-        <div class="w-col w-col-4 tricol">
+        <div class="w-col w-col-12 tricol">
           <div class="w-clearfix triblock">
-            <%= raw @page.content_for(:fabricante) %>
+            <%= raw @producto.fabricante %>
           </div>
         </div>
-        <div class="w-col w-col-4 tricol">
+        <div class="w-col w-col-12 tricol">
           <div class="w-clearfix triblock">
-            <%= raw @page.content_for(:propiedades) %>
+            <%= raw @producto.propiedades %>
           </div>
         </div>
-        <div class="w-col w-col-4 tricol">
+        <div class="w-col w-col-12 tricol">
           <div class="w-clearfix triblock">
-            <%= raw @page.content_for(:aplicaciones) %>
+            <%= raw @producto.aplicaciones %>
+          </div>
+        </div>
+        <div class="w-col w-col-12 tricol">
+          <div class="w-clearfix triblock">
+            <%= raw @producto.disponibilidad %>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</div>
-<div class="section dark web" id="page-nav-portfolio">
-  <div class="w-container">
-    <div class="w-row">
-      <div class="w-col w-col-3">
-        <div class="destacar">
-          <div class="textoblanco">
-          	<%= raw @page.content_for(:destacar) %>
-          </div>
-        </div>
-      </div>
-      <div class="w-col w-col-9 portfolio-text" style="background-image: url(<% @page.images.each do |image| %>
-	        <%= image.url %>
-	   <% end %>)">
-        <div class="w-clearfix botondestacado">
-          <%= raw @page.content_for(:body) %>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="section marcas">
-  <div class="w-container">
-    <div class="w-container">
-      <h2>Nuestras Marcas...</h2>
-    </div>
-    <div class="w-container">
-      <img class="marca" src="assets/proteus.png">
-      <img class="marca" src="assets/paneltim.png">
-      <img class="marca" src="assets/3p.png">
-      <img class="marca" src="assets/brabante.png">
-      <img class="marca" src="assets/taconic.png">
-      <img class="marca" src="assets/quadrant.png">
-      <img class="marca" src="assets/tivar.png">
     </div>
   </div>
 </div>

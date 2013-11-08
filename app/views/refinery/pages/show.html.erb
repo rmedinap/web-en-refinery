@@ -1,52 +1,22 @@
-  <div class="trisection">
-    <div class="w-container service-columns">
-      <div class="w-row">
-        <div class="w-col w-col-4 tricol">
-          <div class="w-clearfix triblock">
-            <%= raw @page.content_for(:columna1) %>
-          </div>
-        </div>
-        <div class="w-col w-col-4 tricol">
-          <div class="w-clearfix triblock">
-            <%= raw @page.content_for(:columna2) %>
-          </div>
-        </div>
-        <div class="w-col w-col-4 tricol">
-          <div class="w-clearfix triblock">
-            <%= raw @page.content_for(:columna3) %>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="section dark web" id="page-nav-portfolio">
-  <div class="w-container">
+<div class="trisection">
+  <div class="w-container service-columns">
     <div class="w-row">
-      <div class="w-col w-col-3">
-        <div class="destacar">
-          <div class="textoblanco">
-          	<%= raw @page.content_for(:destacar) %>
-          </div>
+      <div class="w-col w-col-12 tricol">
+        <div class="w-clearfix triblock">
+          <%= raw @page.content_for(:superior) %>
         </div>
       </div>
-      <div class="w-col w-col-9 portfolio-text" style="background-image: url(<% @page.images.each do |image| %>
-	        <%= image.url %>
-	   <% end %>)">
-        <div class="w-clearfix botondestacado">
-          <%= raw @page.content_for(:body) %>
+      <div class="w-col w-col-12 tricol">
+        <div class="w-clearfix triblock">
+          <%= raw @page.content_for(:medio) %>
+        </div>
+      </div>
+      <div class="w-col w-col-12 tricol">
+        <div class="w-clearfix triblock">
+          <%= raw @page.content_for(:inferior) %>
         </div>
       </div>
     </div>
   </div>
 </div>
-<div class="section marcas">
-  <div class="w-container">
-    <div class="w-container">
-      <h2>Nuestras Marcas...</h2>
-    </div>
-    <div class="w-container">
-      <%= render "/refinery/photo_gallery/albums/show" %>
-    </div>
-  </div>
 </div>
