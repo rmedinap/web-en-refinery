@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131103153817) do
+ActiveRecord::Schema.define(:version => 20131109210357) do
 
   create_table "refinery_album_pages", :force => true do |t|
     t.integer "album_id"
@@ -137,6 +137,7 @@ ActiveRecord::Schema.define(:version => 20131103153817) do
     t.boolean  "spam",       :default => false
     t.datetime "created_at",                    :null => false
     t.datetime "updated_at",                    :null => false
+    t.string   "empresa"
   end
 
   add_index "refinery_inquiries_inquiries", ["id"], :name => "index_refinery_inquiries_inquiries_on_id"

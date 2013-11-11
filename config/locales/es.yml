@@ -1,5 +1,8 @@
 es:
   contact: "contacto"
+
+  empresa: "Empresa"
+
   name: "nombre"
   date:
     abbr_day_names:

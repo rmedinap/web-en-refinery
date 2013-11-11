@@ -52,6 +52,8 @@ gem 'refinerycms', '~> 2.0.3', :git => 'git://github.com/refinery/refinerycms.gi
 
 # USER DEFINED
 
+gem "rails-erd", github: "voormedia/rails-erd"
+
 # Specify additional Refinery CMS Engines here (all optional):
 gem 'refinerycms-i18n', '~> 2.0.0'
 gem 'refinerycms-blog', '~> 2.0.0'

@@ -23,6 +23,10 @@
         <%= f.label :phone, :class => 'placeholder-fallback' %>
         <%= f.text_field :phone, :class => 'text phone', :placeholder => t('phone', :scope => 'activerecord.attributes.refinery/inquiries/inquiry') %>
       </div>
+        <div class="field">
+          <%= f.label :empresa, :class => 'placeholder-fallback' %>
+          <%= f.text_field :empresa, :class => 'text empresa', :placeholder => t('empresa') %>
+        </div>
       <div class='field message_field'>
         <%= f.required_label :message, :class => 'placeholder-fallback' %>
         <%= f.text_area :message, :rows => 8, :required => 'required', :placeholder => t('message', :scope => 'activerecord.attributes.refinery/inquiries/inquiry') %>
