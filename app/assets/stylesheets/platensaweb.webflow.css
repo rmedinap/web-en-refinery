@@ -686,6 +686,7 @@ p {
 .botondestacado {
   width: 380px;
   margin-top: 36px;
+  padding-left: 38px;
 }
 .trisection {
   margin-top: 24px;
@@ -843,6 +844,7 @@ p {
 .otrosproductos {
   padding-bottom: 6px;
   padding-left: 44px;
+  margin-bottom: 12px;
   border-bottom: 1px solid #bfbfbf;
 }
 .otrosproductos.sinlinea {
