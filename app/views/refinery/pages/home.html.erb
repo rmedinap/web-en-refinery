@@ -53,12 +53,21 @@
           </div>
         </div>
       </div>
-      <div class="w-col w-col-9 portfolio-text" style="background-image: url(<% @page.images.each do |image| %>
+      <div class="w-col w-col-5 portfolio-text" style="background-image: url(<% @page.images.each do |image| %>
 	        <%= image.url %>
 	   <% end %>)">
         <div class="w-clearfix botondestacado">
           <%= raw @page.content_for(:body) %>
         </div>
+      </div>
+      <div class="w-col w-col-4">
+        <h2>Otros Productos</h2>
+        <h4>Heading</h4>
+        <p class="otrosproductos">producto destacado dos lineas para comentarios acerca del producto</p>
+        <h4>Heading</h4>
+        <p class="otrosproductos">producto destacado dos lineas para comentarios acerca del producto</p>
+        <h4>Heading</h4>
+        <p class="otrosproductos sinlinea">producto destacado dos lineas para comentarios acerca del producto</p>
       </div>
     </div>
   </div>
@@ -69,13 +78,7 @@
       <h2>Nuestras Marcas...</h2>
     </div>
     <div class="w-container">
-      <img class="marca" src="assets/proteus.png">
-      <img class="marca" src="assets/paneltim.png">
-      <img class="marca" src="assets/3p.png">
-      <img class="marca" src="assets/brabante.png">
-      <img class="marca" src="assets/taconic.png">
-      <img class="marca" src="assets/quadrant.png">
-      <img class="marca" src="assets/tivar.png">
+		<%= raw @page.content_for(:marcas) %>
     </div>
   </div>
 </div>

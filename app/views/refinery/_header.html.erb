@@ -1,26 +1,22 @@
 <div class="social">
     <div class="w-container icons">
-      <%= link_to image_tag("icon_twitter.png", { :class => "social-icon" } ), "http://www.twitter.com" %>
-	  <%= link_to image_tag("icon_face.png", { :class => "social-icon" } ), "http://www.facebook.com" %>
-	  <%= link_to image_tag("icon_rss.png", { :class => "social-icon" } ), "http://www.rss.com" %>
+<%= link_to image_tag("icon_linkedin_color.jpg", { :class => "social-icon" } ), "http://www.linkedin.com" %>
+<%= link_to image_tag("icon_gplus_color.jpg", { :class => "social-icon" } ), "http://www.google.com" %>
+<%= link_to image_tag("icon_face_color.jpg", { :class => "social-icon" } ), "http://www.facebook.com" %>
+<%= link_to image_tag("icon_twit_color.jpg", { :class => "social-icon" } ), "http://www.twitter.com" %>	
+<span class="telefono"> | </span><span class="telefono" href="#">Av. Benavides 2035 - Miraflores </span><span class="telefono"> | </span><a class="telefono" href="tel:012734730">Telf: (00511) 273 4730</a>
     </div>
   </div>
 <div class="section" id="page-nav-services">
   <div class="section" id="page-nav-top">
     <div class="w-container">
-      <div class="w-row topmenu">
-        <div class="w-col w-col-3 w-clearfix logo-bar">
-<h1 id='logo'>
-  <%= image_tag("logo.png", :border => 0, :size => "202x50") %>
-</h1>
-</div>
-<div class="w-col w-col-9 nav-bar topi">
-<%= render(:partial => "/refinery/menu", :locals => {
-             :dom_id => 'menu',
-             :css => 'menu'
-           }) %>
-	       </div>
-       </div>
+        <div class="w-clearfix cabeza">
+          <img class="company-logo" src="assets/logo.png"
+          width="240" alt="Platensa"><%= render(:partial => "/refinery/menu", :locals => {
+		             :dom_id => 'menu',
+		             :css => 'nav-links'
+		           }) %>
+        </div>
      </div>
    </div>
  </div>

@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'futura-pt';
+    src: url('futuraPT.otf');
+    src: url('futuraPT.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'futura-ptl';
+    src: url('futuraPTL.otf');
+    src: url('futuraPTL.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

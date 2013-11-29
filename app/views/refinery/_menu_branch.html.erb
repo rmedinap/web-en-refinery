@@ -3,8 +3,8 @@
     css = "class='#{classes.join(' ')}'".html_safe
   end
 -%>
-<%= link_to(menu_branch.title, refinery.url_for(menu_branch.url), :class => "nav-links") -%>
-<div class="separador <%= classes.join(' ') %>">|</div>
+<%= link_to(menu_branch.title, refinery.url_for(menu_branch.url), :class => css2) -%>
+<span class="nav-separador <%= classes.join(' ') %>">|</span>
   <% if ( (children = menu_branch.children unless hide_children).present? &&
           (!local_assigns[:menu_levels] || menu_branch.ancestors.length < local_assigns[:menu_levels]) ) -%>
 
