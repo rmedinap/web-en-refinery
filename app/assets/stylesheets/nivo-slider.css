@@ -93,6 +93,7 @@
 	top:45%;
 	z-index:9;
 	cursor:pointer;
+	display:none;
 }
 .nivo-prevNav {
 	left:0px;
@@ -103,11 +104,38 @@
 /* Control nav styles (e.g. 1,2,3...) */
 .nivo-controlNav {
 	text-align:center;
-	padding: 15px 0;
+	padding: 2px 0 0 0;
+	position: relative;
+	top: -45px;
+	z-index: 100001;
+	left: 380px;
 }
+
 .nivo-controlNav a {
 	cursor:pointer;
 }
 .nivo-controlNav a.active {
 	font-weight:bold;
+	background-image: url(/assets/icon_carrusel_activo.png);
+	background-repeat: no-repeat no-repeat;
+}
+
+.nivo-control {
+background-image: url(/assets/icon_carrusel.png);
+background-repeat: no-repeat no-repeat;
+display: inline-block;
+width:20px;
+height:20px;
+margin:0 8px 0 0;
+cursor:pointer;
+text-indent:-9999px;
+}
+
+.nivo-control active{
+background-image: url(/assets/icon_carrusel_activo.png);
+background-repeat: no-repeat no-repeat;
+display: inline-block;
+width:20px;
+height:20px;
+margin:0 8px 0 0;
 }
