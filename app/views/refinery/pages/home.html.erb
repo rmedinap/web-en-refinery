@@ -46,14 +46,14 @@
 <div class="section dark web" id="page-nav-portfolio">
   <div class="w-container">
     <div class="w-row">
-      <div class="w-col w-col-3">
+      <div class="w-col w-col-2">
         <div class="destacar">
           <div class="textoblanco">
           	<%= raw @page.content_for(:destacar) %>
           </div>
         </div>
       </div>
-      <div class="w-col w-col-5 portfolio-text" style="background-image: url(<% @page.images.each do |image| %>
+      <div class="w-col w-col-6 portfolio-text" style="background-image: url(<% @page.images.each do |image| %>
 	        <%= image.url %>
 	   <% end %>)">
         <div class="w-clearfix botondestacado">
