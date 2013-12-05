@@ -195,7 +195,7 @@ p {
   padding-top: 0px;
   padding-bottom: 0px;
   border-bottom: 0px none #d0d1d1;
-  background-color: #000536;
+  background-color: #235577;
   background-image: none;
   -webkit-transition: all 500ms ease;
   -o-transition: all 500ms ease;
@@ -338,7 +338,7 @@ p {
   border-left: 1px solid #d8d8d8;
   font-family: futura-ptl, sans-serif;
   color: white;
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 100;
   text-align: right;
   text-decoration: none;
@@ -603,6 +603,17 @@ p {
   padding-right: 2px;
   padding-left: 0px;
   text-align: center;
+}
+.piecentrado {
+  margin-top: 0px;
+  background-image: none;
+  direction: ltr;
+  font-family: futura-ptl, sans-serif;
+  color: white;
+  font-size: 16px;
+  font-weight: 100;
+  text-align: center;
+  text-transform: none;			
 }
 .textologopie {
   margin-top: 0px;
