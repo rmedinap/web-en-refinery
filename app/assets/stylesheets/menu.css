@@ -1,0 +1,123 @@
+.navegar {
+float: right;
+margin-right: 26px;
+}
+
+ul#navlist { font-family: sans-serif; }
+
+ul#navlist a
+{
+font-weight: bold;
+text-decoration: none;
+}
+
+ul#navlist, ul#navlist ul, ul#navlist li
+{
+margin: 0px;
+padding: 0px;
+list-style-type: none;
+}
+
+ul#navlist li { float: left; }
+
+ul#navlist li a
+{
+  margin: 26px 5px 10px;
+  padding: 5px 19px;
+  float: right;
+  border-radius: 6px;
+  box-shadow: none;
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+  font-family: futura-ptl, sans-serif;
+  color: #585757;
+  font-size: 12px;
+  font-weight: 100;
+  text-align: left;
+  letter-spacing: 0px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: rgba(0, 0, 0, 0.24) 0px 1px 0px;
+}
+
+ul#navlist li a:hover
+{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-width: 0px;
+  border-top-style: solid;
+  border-top-color: black;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+  border-left-style: solid;
+  border-left-color: black;
+  border-radius: 6px;
+  background-color: #235577;
+  background-image: none;
+  box-shadow: none;
+  -webkit-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+  color: white;
+  text-shadow: none;
+}
+
+ul#navlist li a:active
+{
+padding-top: 5px;
+padding-bottom: 5px;
+border-width: 0px;
+border-top-style: solid;
+border-top-color: black;
+border-bottom-style: solid;
+border-bottom-color: black;
+border-left-style: solid;
+border-left-color: black;
+border-radius: 6px;
+background-color: #235577;
+background-image: none;
+box-shadow: none;
+-webkit-transform: none;
+-ms-transform: none;
+-o-transform: none;
+transform: none;
+-webkit-transition: none;
+-o-transition: none;
+transition: none;
+color: white;
+text-shadow: none;
+}
+
+.submenu {margin:56px 0 0 10px !important; background: #EFEFEF; z-index: 1000000;}
+
+ul#subnavlist { display: none; }
+ul#subnavlist li { float: none; }
+
+ul#subnavlist li a
+{
+padding: 0px;
+margin: 0px;
+}
+
+ul#navlist li:hover ul#subnavlist
+{
+display: block;
+position: absolute;
+font-size: 8pt;
+padding-top: 5px;
+}
+
+ul#navlist li:hover ul#subnavlist li a
+{
+display: block;
+width: 10em;
+border: none;
+padding: 2px;
+}
+
+ul#navlist li:hover ul#subnavlist li a:before { content: " - "; }5X
