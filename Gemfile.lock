@@ -66,12 +66,6 @@ GIT
       choice (~> 0.1.6)
       ruby-graphviz (~> 1.0.4)
 
-PATH
-  remote: vendor/extensions
-  specs:
-    refinerycms-productos (1.0)
-      refinerycms-core (~> 2.0.10)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -294,7 +288,6 @@ DEPENDENCIES
   refinerycms-inquiries (~> 2.0.0)
   refinerycms-page-images (~> 2.0.0)
   refinerycms-photo-gallery (~> 0.1.0)!
-  refinerycms-productos!
   refinerycms-search (~> 2.0.0)
   sass-rails (~> 3.2.3)
   therubyracer

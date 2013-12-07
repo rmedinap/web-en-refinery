@@ -64,5 +64,3 @@ gem 'refinerycms-image_slideshows', '~> 2.0.1'
 gem 'refinerycms-photo-gallery', '~> 0.1.0', :git => 'git://github.com/Matho/refinerycms-photo-gallery.git', :branch=>'0-1-stable'
 
 # END USER DEFINED
-
-gem 'refinerycms-productos', :path => 'vendor/extensions'
