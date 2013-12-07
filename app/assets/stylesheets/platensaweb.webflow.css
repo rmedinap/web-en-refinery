@@ -605,7 +605,7 @@ p {
   text-align: center;
 }
 .piecentrado {
-  margin-top: 0px;
+  margin: -16px auto 0 auto;
   background-image: none;
   direction: ltr;
   font-family: futura-ptl, sans-serif;
@@ -613,7 +613,8 @@ p {
   font-size: 16px;
   font-weight: 100;
   text-align: center;
-  text-transform: none;			
+  text-transform: none;
+  display: table;			
 }
 .textologopie {
   margin-top: 0px;
