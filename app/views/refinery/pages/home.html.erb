@@ -25,17 +25,17 @@
     <div class="w-container service-columns">
       <div class="w-row">
         <div class="w-col w-col-4 tricol">
-          <div class="w-clearfix triblock">
+          <div class="w-clearfix triblock" id="izquierdo">
             <%= raw @page.content_for(:columna1) %>
           </div>
         </div>
         <div class="w-col w-col-4 tricol">
-          <div class="w-clearfix triblock">
+          <div class="w-clearfix triblock" id="medio">
             <%= raw @page.content_for(:columna2) %>
           </div>
         </div>
         <div class="w-col w-col-4 tricol">
-          <div class="w-clearfix triblock">
+          <div class="w-clearfix triblock" id="derecho">
             <%= raw @page.content_for(:columna3) %>
           </div>
         </div>
@@ -61,13 +61,7 @@
         </div>
       </div>
       <div class="w-col w-col-4">
-        <h2>Otros Productos</h2>
-        <h4>Heading</h4>
-        <p class="otrosproductos">producto destacado dos lineas para comentarios acerca del producto</p>
-        <h4>Heading</h4>
-        <p class="otrosproductos">producto destacado dos lineas para comentarios acerca del producto</p>
-        <h4>Heading</h4>
-        <p class="otrosproductos sinlinea">producto destacado dos lineas para comentarios acerca del producto</p>
+        <%= raw @page.content_for(:otros_productos) %>
       </div>
     </div>
   </div>
@@ -82,3 +76,9 @@
     </div>
   </div>
 </div>
+<script language="javascript" type="text/javascript">
+var maximo=Math.max($("#izquierdo").height(),$("#medio").height(),$("#derecho").height())+10;
+$("#izquierdo").height(maximo);
+$("#medio").height(maximo);
+$("#derecho").height(maximo);
+</script>

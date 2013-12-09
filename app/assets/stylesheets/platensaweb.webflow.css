@@ -766,6 +766,7 @@ p {
 .destacados {
   width: 220px;
   font-family: futura-ptl, sans-serif;
+  font-size: 13px;
   color: black;
   font-weight: 100;
 }
