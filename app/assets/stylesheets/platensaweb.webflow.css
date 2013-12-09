@@ -689,9 +689,6 @@ p {
   background-color: #efefef;
   box-shadow: none;
 }
-.triblock:hover {
-  color: white;
-}
 .tricol {
   height: 100%;
   padding-right: 3px;
