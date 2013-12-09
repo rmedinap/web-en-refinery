@@ -1465,3 +1465,8 @@ div.col-2 {
 .header {
 	margin-bottom: 10px;
 }
+
+iframe {
+margin: 10px auto 10px auto;
+display: block;
+}
