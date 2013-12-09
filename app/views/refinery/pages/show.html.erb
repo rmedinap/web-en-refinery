@@ -60,6 +60,13 @@
 	        </div>
 	      </div>
 	<% end %>
+	<% if (@page.content_for(:ultimo))%>
+      <div class="w-col w-col-12 tricol">
+        <div class="w-clearfix triblock">
+          <%= raw @page.content_for(:ultimo) %>
+        </div>
+      </div>
+	<% end %>
     </div>
   </div>
 </div>
