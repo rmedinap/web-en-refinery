@@ -814,9 +814,9 @@ p {
 }
 .ppropiedades {
   display: block;
-  margin-right: 34px;
-  margin-left: 34px;
-  padding-left: 24px;
+  margin-right: 17px;
+  margin-left: 15px;
+  padding-left: 21px;
   float: left;
   clear: both;
   background-image: url(/assets/icoselect.png);
@@ -1384,7 +1384,7 @@ table#grupos {
 	border-width:0px 1px 1px 0px;
 	text-align:left;
 	padding:7px;
-	font-size:13px;
+	font-size:12px;
 	font-family:Arial;
 	font-weight:normal;
 	color:#000000;
