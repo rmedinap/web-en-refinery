@@ -1327,8 +1327,9 @@ table#grupos {
 }
 
 .tablita {
-	margin:0px;padding:0px;
-	width:100%;
+	margin: 10px auto 10px auto;
+	padding: 0px;
+	width: 98%;
 	border:1px solid #ffffff;
 
 	-moz-border-radius-bottomleft:5px;
@@ -1382,7 +1383,7 @@ table#grupos {
 	border-width:0px 1px 1px 0px;
 	text-align:left;
 	padding:7px;
-	font-size:10px;
+	font-size:13px;
 	font-family:Arial;
 	font-weight:normal;
 	color:#000000;
