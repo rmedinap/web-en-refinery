@@ -1488,3 +1488,13 @@ display: block;
 .bloquepropiedades {
 padding-left: 60px;
 }
+
+.img#producto2 {
+float: left;
+position: relative;
+left: 8%;
+margin-top: 20px;
+margin-bottom: 20px;
+border: 8px solid #235577;
+padding: 3px;
+}
