@@ -41,6 +41,18 @@
 	        </div>
 	      </div>
 	<% end %>
+	<% if (@page.content_for(:medio_izquierdo2))%>
+      <div class="w-col w-col-6 tricol">
+        <div class="w-clearfix triblock" id="left-col-medio-izquierdo2">
+          <%= raw @page.content_for(:medio_izquierdo2) %>
+        </div>
+      </div>
+	      <div class="w-col w-col-6 tricol">
+	        <div class="w-clearfix triblock" id="right-col-medio-derech2o">
+	          <%= raw @page.content_for(:medio_derecho2) %>
+	        </div>
+	      </div>
+	<% end %>
 	<% if (@page.content_for(:inferior))%>
       <div class="w-col w-col-12 tricol">
         <div class="w-clearfix triblock">
@@ -79,6 +91,10 @@ $("#right-col-superior-derecho").height(maximo);
 var maximo=Math.max($("#left-col-medio-izquierdo").height(),$("#right-col-medio-derecho").height());
 $("#left-col-medio-izquierdo").height(maximo);
 $("#right-col-medio-derecho").height(maximo);
+
+var maximo=Math.max($("#left-col-medio-izquierdo2").height(),$("#right-col-medio-derecho2").height());
+$("#left-col-medio-izquierdo2").height(maximo);
+$("#right-col-medio-derecho2").height(maximo);
 
 var maximo=Math.max($("#left-col-inferior-izquierdo").height(),$("#right-col-inferior-derecho").height());
 $("#left-col-inferior-izquierdo").height(maximo);
