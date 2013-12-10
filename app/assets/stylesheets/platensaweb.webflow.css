@@ -1472,3 +1472,15 @@ iframe {
 margin: 10px auto 10px auto;
 display: block;
 }
+
+.inquiries {
+    display: block;
+    clear: both;
+    margin: 0px 50px 20px 50px;
+    padding: 5px;
+}
+
+.pdetalles {
+    margin: 0px;
+    clear: both;
+}

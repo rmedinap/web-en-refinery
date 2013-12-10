@@ -2,8 +2,8 @@
   <div class="w-container service-columns">
     <div class="w-row">
       <div class="w-col w-col-6 tricol">
-        <div class="w-clearfix triblock">
-	<h2>Formulario de contacto</h2>
+        <div class="w-clearfix triblock" id="izquierdo"	>
+	<h2 class="ertalon">Formulario de contacto</h2>
 	<p>Puede ponerse en contacto con nosotros llenando el siguiente formulario:</p>
 <% content_for :body_content_left do %>
   <div class='inquiries'>
@@ -42,14 +42,21 @@
 <% end %>
 <%= render :partial => "/refinery/content_page" %>
 </div></div>
-  <div class="w-col w-col-6 tricol">
+  <div class="w-col w-col-6 tricol" id="derecho">
     <div class="w-clearfix triblock">
-	<h2>Oficina</h2>
-	<p>Av. Benavides 2035 - Miraflores, teléfono (00511) 273 4730</p>
+	<h2 class="ertalon">Oficina</h2>
+	<p class="pdetalles">Av. Benavides 2035 - Miraflores, teléfono (00511) 273 4730</p>
 	<%= image_tag "http://maps.googleapis.com/maps/api/staticmap?center=Av+Benavides+2035,Miraflores,LIMA,PE&zoom=16&size=420x220&maptype=roadmap&sensor=false", :class => 'mapita', :alt => 'Miraflores' %>
-	<h2>Talleres</h2>
-	<p>Calle Talara 165 - San Juan de Miraflores</p>
+	</div>
+    <div class="w-clearfix triblock">
+	<h2 class="ertalon">Talleres</h2>
+	<p class="pdetalles">Calle Talara 165 - San Juan de Miraflores</p>
 	<%= image_tag "http://maps.googleapis.com/maps/api/staticmap?center=Calle+Talara+165,San+Juan+de+Miraflores,LIMA,PE&zoom=16&size=420x220&maptype=roadmap&sensor=false", :class => 'mapita', :alt => 'Miraflores' %>
 	</div>	
 </div>
     </div></div></div>
+<script language="javascript" type="text/javascript">
+	var maximo=Math.max($("#izquierdo").height(),$("#derecho").height())+25;
+	$("#izquierdo").height(maximo);
+	$("#derecho").height(maximo);
+</script>
